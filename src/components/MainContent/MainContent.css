@@ -1,0 +1,10 @@
+.container{
+    max-width: 100%
+}
+
+.column-style {
+    height: 50px;
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+    border-right: 1px solid blueviolet;
+}
