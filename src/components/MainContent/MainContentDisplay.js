@@ -14,7 +14,7 @@ export default class MainContentDisplay extends React.Component {
                     <Col className="column-body story" sm="4">
                         <div>
                             <h3>Story 1</h3>
-                            <p>This is a <strong>subtitle about a <code>EPIC</code> to provide context</strong>.</p>
+                            <p>This is a <strong>subtitle about an <code>EPIC</code> to provide context</strong>.</p>
                             <ListGroup>
                             <ListGroupItem tag="a" href="#" color="primary" action>Cras justo odio</ListGroupItem>
                             <ListGroupItem tag="a" href="#" action>Dapibus ac facilisis in</ListGroupItem>
