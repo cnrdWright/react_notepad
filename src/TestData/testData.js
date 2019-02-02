@@ -12,7 +12,7 @@ const jsonResponse =
           "Title": "First Story First Epic",
           "CreatedDate" : "1-27-2019",
           "Epic" : "e123",
-          "s123" : [
+          "Stories" : [
             {
               "Title" : "Note 1",
               "Id" : "n123",
@@ -34,16 +34,16 @@ const jsonResponse =
           "Title": "Second Story First Epic",
           "CreatedDate" : "1-27-2019",
           "Epic" : "e123",
-          "s123" : [
+          "Stories" : [
             {
-              "Title" : "Note 1",
+              "Title" : "Note 1 story 2",
               "Id" : "n123",
               "Story" : "s123",
               "Date" : "2-22-2019",
               "Text": "This is a Note"
             },
             {
-              "Title" : "Note 2",
+              "Title" : "Note 2 story 2",
               "Id" : "n223",
               "Story" : "s123",
               "Date" : "2-22-2019",
@@ -64,16 +64,16 @@ const jsonResponse =
         "Title": "This is the Second Story",
         "CreatedDate" : "1-27-2019",
         "Epic" : "e456",
-        "s456" : [
+        "Stories" : [
           {
-            "Title" : "Note 1",
+            "Title" : "Note 1 epic 2",
             "Id" : "n456",
             "Story" : "s456",
             "Date" : "2-22-2019",
             "Text": "This is a Note"
           },
           {
-            "Title" : "Note 2",
+            "Title" : "Note 2 epic 2",
             "Id" : "n223",
             "Story" : "s456",
             "Date" : "2-22-2019",
