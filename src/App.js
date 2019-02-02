@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavBar from './components/Navbar'
+import NavBar from './components/NavBar/Navbar'
 import MainContentDisplay from './components/MainContent/MainContentDisplay'
 //Mock Data. For testing purposes only
 import jsonResponse from './TestData/testData'
@@ -14,7 +14,7 @@ class App extends React.Component {
   }
   
   epicSelectHandler = (prop) => {
-     let SelectedEpic = {...this.state.SelectedEpic}
+     const SelectedEpic = {...this.state.SelectedEpic}
      SelectedEpic.Id = prop.Id
      SelectedEpic.Title = prop.Title
      
@@ -22,8 +22,8 @@ class App extends React.Component {
   }
 
   render() {
-    let SelectedEpic = this.state.SelectedEpic
- 
+    const SelectedEpic = this.state.SelectedEpic
+
     return (
       <div className="App">
         <NavBar 
@@ -31,11 +31,13 @@ class App extends React.Component {
           selectedEpic={SelectedEpic} 
           clicked={this.epicSelectHandler}/>
 
-        <MainContentDisplay />
+        <MainContentDisplay 
+          epics={this.state.Epics}
+          selectedEpic={SelectedEpic}/>
 
-        <header className="App-header">
+        {/* <header className="App-header">
           <h1>notepad</h1>
-        </header>
+        </header> */}
       </div>
     );
   }
