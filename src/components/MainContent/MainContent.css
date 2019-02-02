@@ -4,9 +4,25 @@
 
 .column-style {
     height: 50px;
-    background-color: aliceblue;
-    border-bottom: 1px solid black;
+    font-size: 30px;
+    background-color: rgb(174, 244, 255);
+    border-bottom: 2px solid black;
 }
-        project {
-            border-right: 1px solid blueviolet;
+
+.project {
+    border-right: 2px solid black;
 }
+
+.row-body {
+    height: -webkit-fill-available;
+    /* max-width: 100%; */
+}
+
+.column-body {
+
+}
+
+.story {
+    border-right: 2px solid black;
+}
+    
