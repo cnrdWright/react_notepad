@@ -20,7 +20,7 @@ export default class MainContentDisplay extends React.Component {
                 return (
                     <div>
                         <h3 key={story.Title}>{story.Title}</h3>
-                        <Notes key={story.title} stories={selectedStories} storyId={story.Id}/>
+                        {/* <Notes key={story.title} stories={selectedStories} storyId={story.Id}/> */}
                     </div>
                 )
             })
