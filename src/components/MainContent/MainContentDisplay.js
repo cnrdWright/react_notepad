@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 import './MainContent.css'
-import Notes from '../Notes/Notes'
+// import Notes from '../Notes/Notes'
 
 export default class MainContentDisplay extends React.Component {
 
