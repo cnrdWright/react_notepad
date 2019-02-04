@@ -20,21 +20,23 @@ export default class NavBar extends React.Component {
       isOpen: false
     };
   }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
     const epicTitle = this.props.selectedEpic.Title
+    const epicId = this.props.selectedEpic.Id
     const epics = this.props.epics.map((prop, index) =>{
-
-        return <DropdownItem 
-          key={index} 
-          value={prop.Id}
-          onClick={() => this.props.clicked(prop)}>
-            {prop.Title}
-        </DropdownItem>
+      return <DropdownItem 
+        key={index} 
+        value={prop.Id}
+        onClick={() => this.props.clicked(prop)}>
+          {prop.Title}
+      </DropdownItem>
     })
 
     return (
